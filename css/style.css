@@ -1,7 +1,45 @@
 .bg-electricGreen{
-  background-color: rgb(30 215 97)
+  background-color: rgb(30 215 97)!important;
 }
 .text-electricGreen {
-  --tw-text-opacity: 1;
-  color: rgb(30 215 97);
+  --tw-text-opacity: 1!important;
+  color: rgb(30 215 97)!important;
 }
+.hide{
+  display: none!important;
+}
+/* Styling for the overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.overlay-content img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* Styling for the overlay */
