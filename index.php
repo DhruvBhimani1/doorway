@@ -44,7 +44,7 @@
     </header>
 
     <!-- heading section -->
-    <div class="flex flex-col items-center">
+    <div id="main_heading" class="flex flex-col items-center">
         <div class="hidden md:block text-[25px] md:text-[50px] heading-[58px] font-[700] mb-[12px] md:mb-[17px] text-center max-w-[682px] px-[30px]">
             Create sample card
         </div>
@@ -82,7 +82,7 @@
             <div class="flex flex-col items-center">
                 <div>
                     <div class="flex flex-col md:flex-row gap-[44px] md:gap-[75px] items-center md:items-start justify-center">
-                        <div class="w-[330px]">
+                        <div class="w-[330px]" id="card">
                             <div class="flex md:hidden justify-center">
                                 <div class="border border-black py-[8px] px-[20px] rounded-[4px] flex items-center gap-[7px] cursor-pointer text-[15px]">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor">
@@ -98,7 +98,7 @@
                                     <div class="flex flex-col h-full justify-between pb-6">
                                         <div class=" mt-3 ml-3 w-1/6" id="card_iconimg">
                                             <div class="block w-4 sm:w-5 mt-3 ml-3 w-1/6" >
-                                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 429.6 687.2">
+                                                <svg id="apple_svg" version="1.1"  xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 429.6 687.2">
                                                     <path d="M56.7 61.8c.7-1.9 1.3-3.6 1.8-5.1 100.4-39.6 212.1-39.7 312.6 0 .6 1.6 1.2 3.4 1.9 5.3 3.2 9.6 7.6 24 12 42.8 8.8 37.7 17.7 93.2 17.7 163.4s-8.9 125.7-17.7 163.4c-4.4 18.9-8.8 33.3-12 42.8-.7 2-1.3 3.8-1.9 5.3-100.4 39.6-212.2 39.6-312.6 0-.5-1.5-1.1-3.2-1.8-5.1-3.2-9.3-7.6-23.5-12-42.2C35.9 395.1 27 339.7 27 268.3S35.9 141.4 44.7 104c4.4-18.6 8.8-32.8 12-42.2z" style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 54;"></path>
                                                     <path fill="#ffffff" d="M61.9 539.8c99.1 34 206.7 34 305.8 0 8.2 23.9-4.5 50.2-29.1 56.3-81.3 20.1-166.3 20.1-247.6 0-24.6-6.1-37.3-32.4-29.1-56.3z" style="fill-rule: evenodd; clip-rule: evenodd;"></path>
                                                     <path fill="#ffffff" d="M92.1 626.3c80.6 20.1 164.8 20.1 245.4 0 6.1 24.5-8.8 49.6-33.7 53.7-58.9 9.6-119 9.6-177.9 0-25-4.1-39.9-29.2-33.8-53.7z" style="fill-rule: evenodd; clip-rule: evenodd;"></path>
@@ -109,22 +109,22 @@
                                         <div class="items-center justify-center overflow-hidden flex aspect-[1033/407] my-[15px]" id="card_stripimg">
                                             <span class="flex items-center px-6 w-full block aspect-[3/1]">
                                                 <div class="mx-auto w-2/3">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.7 31.2">
+                                                    <svg id="apple_stripsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.7 31.2">
                                                       <path fill="#ffffff" d="M-73.4-24.1h5c1.4 0 2.6-.2 3.7-.6 1.1-.4 2-.9 2.7-1.7.7-.7 1.3-1.6 1.7-2.6.4-1 .6-2.2.6-3.6 0-1.3-.2-2.4-.5-3.5-.4-1-.9-1.9-1.6-2.7-.7-.8-1.6-1.3-2.7-1.7-1.1-.4-2.3-.6-3.8-.6h-5v17zm-4.6 3.9V-45h9.6c1.9 0 3.6.3 5.2.8s3 1.3 4.2 2.4c1.2 1 2.1 2.3 2.7 3.9.7 1.5 1 3.3 1 5.3 0 1.8-.3 3.5-.9 5.1-.6 1.5-1.4 2.8-2.5 3.9s-2.5 1.9-4.1 2.5c-1.6.6-3.5.9-5.6.9H-78zm24.8-9.4c0-1.4.3-2.7.8-3.9.5-1.2 1.2-2.3 2.1-3.2.9-.9 2-1.6 3.3-2.1 1.3-.5 2.6-.8 4.1-.8 1.5 0 2.9.3 4.2.8 1.3.5 2.4 1.2 3.3 2.1.9.9 1.6 2 2.1 3.2.5 1.2.8 2.5.8 3.9s-.3 2.7-.8 3.9c-.5 1.2-1.2 2.3-2.1 3.2-.9.9-2 1.6-3.3 2.1-1.3.5-2.7.8-4.2.8s-2.9-.3-4.1-.8c-1.3-.5-2.3-1.2-3.2-2.1-.9-.9-1.6-1.9-2.1-3.2-.7-1.2-.9-2.5-.9-3.9zm4.4 0c0 .9.2 1.7.5 2.5.3.7.7 1.4 1.3 1.9.5.5 1.2 1 1.9 1.3.7.3 1.5.5 2.3.5.8 0 1.6-.1 2.3-.4.7-.3 1.3-.7 1.9-1.3.5-.5 1-1.2 1.3-1.9.3-.8.5-1.6.5-2.5 0-.9-.2-1.7-.5-2.4-.3-.8-.7-1.4-1.3-1.9-.5-.5-1.2-1-1.9-1.3-.7-.3-1.5-.5-2.3-.5-.8 0-1.6.2-2.3.5-.7.3-1.3.7-1.9 1.3-.5.5-1 1.2-1.3 1.9-.3.6-.5 1.4-.5 2.3zm19-3.9c-.5 1.2-.8 2.5-.8 3.9s.3 2.7.8 3.9c.5 1.2 1.2 2.3 2.1 3.2.9.9 2 1.6 3.2 2.1 1.3.5 2.6.8 4.1.8 1.5 0 2.9-.3 4.2-.8 1.3-.5 2.4-1.2 3.3-2.1.9-.9 1.6-1.9 2.1-3.2.5-1.2.8-2.5.8-3.9s-.3-2.7-.8-3.9c-.5-1.2-1.2-2.3-2.1-3.2-.9-.9-2-1.6-3.3-2.1-1.3-.5-2.6-.8-4.2-.8-1.5 0-2.9.3-4.1.8-1.3.5-2.4 1.2-3.3 2.1-.8 1-1.5 2-2 3.2zm4.1 6.4c-.3-.8-.5-1.6-.5-2.5s.2-1.7.5-2.5c.3-.7.7-1.4 1.3-1.9.5-.5 1.2-1 1.9-1.3.7-.3 1.5-.5 2.3-.5.8 0 1.6.2 2.3.5.7.3 1.3.7 1.9 1.3.5.5 1 1.2 1.3 1.9.3.7.5 1.6.5 2.4 0 .9-.2 1.7-.5 2.5s-.7 1.4-1.3 1.9c-.5.5-1.2 1-1.9 1.3-.7.3-1.5.4-2.3.4-.8 0-1.6-.2-2.3-.5-.7-.3-1.3-.7-1.9-1.3-.5-.3-1-1-1.3-1.7zm29.7-8L2.6-39c-1.2 0-2.2.2-3.1.6-1 .4-1.8 1-2.4 1.6l-.4-2.2h-3.6v18.7h4.4v-9c0-1 .1-1.8.4-2.6.3-.7.6-1.3 1.1-1.8.5-.5 1.1-.9 1.8-1.1.7-.3 1.5-.4 2.3-.4l.9.1zM35.3-39h-4.8l-4.3 12.9h-.1L22-38.8h-3.3l-4.1 12.7h-.1L10.2-39H5.4l6.7 18.7h4l4.2-12 4.3 12h4L35.3-39zm4.3 9.4c0 .9.2 1.7.5 2.5s.7 1.4 1.3 1.9c.5.5 1.2 1 1.9 1.3.7.3 1.5.4 2.4.4.8 0 1.6-.1 2.3-.4.7-.3 1.4-.7 1.9-1.3.5-.5 1-1.2 1.3-1.9.3-.8.5-1.6.5-2.5 0-.9-.2-1.7-.5-2.4-.3-.8-.7-1.4-1.3-1.9-.5-.5-1.2-1-1.9-1.3-.7-.3-1.5-.5-2.3-.5s-1.6.2-2.4.5c-.7.3-1.4.7-1.9 1.3-.5.5-1 1.2-1.3 1.9-.3.7-.5 1.5-.5 2.4zm-4.4 0c0-1.4.2-2.7.7-3.9.5-1.2 1.2-2.3 2-3.2.9-.9 1.9-1.6 3.2-2.1 1.2-.5 2.6-.8 4.1-.8.7 0 1.4.1 2 .2.6.1 1.2.3 1.8.6.6.2 1.1.5 1.5.8.5.3.9.6 1.3 1l.3-2.1h3.8v18.7h-3.8l-.3-2.1c-.4.4-.8.7-1.3 1-.5.3-1 .6-1.5.8-.5.2-1.1.4-1.8.5-.6.1-1.3.2-2 .2-1.5 0-2.9-.3-4.1-.8-1.2-.5-2.3-1.2-3.2-2.1-.9-.9-1.6-1.9-2-3.2-.4-.8-.7-2.1-.7-3.5zM77.7-39H73l-5.3 12.8-.2-.9-5-11.9h-4.9l7.7 18-3.3 7.2h4.8L77.7-39z" transform="translate(78 45)" style="fill-rule: evenodd; clip-rule: evenodd;"></path>
                                                   </svg>
                                                 </div>
                                             </span>
                                         </div>
                                       <div class="mb-12">
-                                            <div class="px-6">
-                                                <div id="apple_jobtitle" class="text-[12px] uppercase text-white">
+                                            <div id="apple_text" class="px-6 text-white">
+                                                <div id="apple_jobtitle" class="text-[12px] uppercase">
                                                     Chief Networking Officer
                                                 </div>
                                                 <div class="flex gap-x-2">
-                                                    <div id="apple_firstname" class="text-2xl capitalize  font-extralight text-white">
+                                                    <div id="apple_firstname" class="text-2xl capitalize  font-extralight">
                                                         Jane
                                                     </div>
-                                                    <div id="apple_lastname" class="text-2xl capitalize font-extralight text-white">
+                                                    <div id="apple_lastname" class="text-2xl capitalize font-extralight">
                                                         Appleseed
                                                     </div>
                                                 </div>
@@ -146,7 +146,7 @@
                                                     <div class="h-[32px] mr-[16px]">
                                                         <div id="android_iconimg" class="rounded-full h-[32px] w-[32px] m-0 flex">
                                                             <div class="block w-full p-2">
-                                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 429.6 687.2">
+                                                                <svg id="android_svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 429.6 687.2">
                                                                     <path d="M56.7 61.8c.7-1.9 1.3-3.6 1.8-5.1 100.4-39.6 212.1-39.7 312.6 0 .6 1.6 1.2 3.4 1.9 5.3 3.2 9.6 7.6 24 12 42.8 8.8 37.7 17.7 93.2 17.7 163.4s-8.9 125.7-17.7 163.4c-4.4 18.9-8.8 33.3-12 42.8-.7 2-1.3 3.8-1.9 5.3-100.4 39.6-212.2 39.6-312.6 0-.5-1.5-1.1-3.2-1.8-5.1-3.2-9.3-7.6-23.5-12-42.2C35.9 395.1 27 339.7 27 268.3S35.9 141.4 44.7 104c4.4-18.6 8.8-32.8 12-42.2z" style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 54;"></path>
                                                                     <path fill="#ffffff" d="M61.9 539.8c99.1 34 206.7 34 305.8 0 8.2 23.9-4.5 50.2-29.1 56.3-81.3 20.1-166.3 20.1-247.6 0-24.6-6.1-37.3-32.4-29.1-56.3z" style="fill-rule: evenodd; clip-rule: evenodd;"></path>
                                                                     <path fill="#ffffff" d="M92.1 626.3c80.6 20.1 164.8 20.1 245.4 0 6.1 24.5-8.8 49.6-33.7 53.7-58.9 9.6-119 9.6-177.9 0-25-4.1-39.9-29.2-33.8-53.7z" style="fill-rule: evenodd; clip-rule: evenodd;"></path>
@@ -157,16 +157,18 @@
                                                     </div>
                                                     <div style="color: rgb(255, 255, 255);"></div>
                                                 </div>
-                                                <div class="flex gap-x-2">
-                                                    <div id="android_firstname" class="mt-[24px] capitalize text-[32px] leading-[40px] font-normal" style="color: rgb(255, 255, 255);">
-                                                        Jane
+                                                <div id="android_text" class="text-white">
+                                                    <div class="flex gap-x-2 ">
+                                                        <div id="android_firstname" class=" mt-[24px] capitalize text-[32px] leading-[40px] font-normal">
+                                                            Jane
+                                                        </div>
+                                                        <div id="android_lastname" class="mt-[24px] capitalize text-[32px] leading-[40px] font-normal">
+                                                            Appleseed
+                                                        </div>
                                                     </div>
-                                                    <div id="android_lastname" class="mt-[24px] capitalize text-[32px] leading-[40px] font-normal" style="color: rgb(255, 255, 255);">
-                                                        Appleseed
+                                                    <div id="android_jobtitle" class="mt-[16px] uppercase text-[16px] font-normal">
+                                                        Chief Networking Officer
                                                     </div>
-                                                </div>
-                                                <div id="android_jobtitle" class="mt-[16px] uppercase text-[16px] font-normal" style="color: rgb(255, 255, 255);">
-                                                    Chief Networking Officer
                                                 </div>
                                             </div>
                                             <div class="mt-[12px] mb-[12px]">
@@ -181,7 +183,7 @@
                                             <div id="android_stripimg">
                                                  <span class="flex items-center px-6 w-full block aspect-[3/1]">
                                                     <div class="mx-auto w-2/3">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.7 31.2">
+                                                        <svg id="android_stripsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.7 31.2">
                                                           <path fill="#ffffff" d="M-73.4-24.1h5c1.4 0 2.6-.2 3.7-.6 1.1-.4 2-.9 2.7-1.7.7-.7 1.3-1.6 1.7-2.6.4-1 .6-2.2.6-3.6 0-1.3-.2-2.4-.5-3.5-.4-1-.9-1.9-1.6-2.7-.7-.8-1.6-1.3-2.7-1.7-1.1-.4-2.3-.6-3.8-.6h-5v17zm-4.6 3.9V-45h9.6c1.9 0 3.6.3 5.2.8s3 1.3 4.2 2.4c1.2 1 2.1 2.3 2.7 3.9.7 1.5 1 3.3 1 5.3 0 1.8-.3 3.5-.9 5.1-.6 1.5-1.4 2.8-2.5 3.9s-2.5 1.9-4.1 2.5c-1.6.6-3.5.9-5.6.9H-78zm24.8-9.4c0-1.4.3-2.7.8-3.9.5-1.2 1.2-2.3 2.1-3.2.9-.9 2-1.6 3.3-2.1 1.3-.5 2.6-.8 4.1-.8 1.5 0 2.9.3 4.2.8 1.3.5 2.4 1.2 3.3 2.1.9.9 1.6 2 2.1 3.2.5 1.2.8 2.5.8 3.9s-.3 2.7-.8 3.9c-.5 1.2-1.2 2.3-2.1 3.2-.9.9-2 1.6-3.3 2.1-1.3.5-2.7.8-4.2.8s-2.9-.3-4.1-.8c-1.3-.5-2.3-1.2-3.2-2.1-.9-.9-1.6-1.9-2.1-3.2-.7-1.2-.9-2.5-.9-3.9zm4.4 0c0 .9.2 1.7.5 2.5.3.7.7 1.4 1.3 1.9.5.5 1.2 1 1.9 1.3.7.3 1.5.5 2.3.5.8 0 1.6-.1 2.3-.4.7-.3 1.3-.7 1.9-1.3.5-.5 1-1.2 1.3-1.9.3-.8.5-1.6.5-2.5 0-.9-.2-1.7-.5-2.4-.3-.8-.7-1.4-1.3-1.9-.5-.5-1.2-1-1.9-1.3-.7-.3-1.5-.5-2.3-.5-.8 0-1.6.2-2.3.5-.7.3-1.3.7-1.9 1.3-.5.5-1 1.2-1.3 1.9-.3.6-.5 1.4-.5 2.3zm19-3.9c-.5 1.2-.8 2.5-.8 3.9s.3 2.7.8 3.9c.5 1.2 1.2 2.3 2.1 3.2.9.9 2 1.6 3.2 2.1 1.3.5 2.6.8 4.1.8 1.5 0 2.9-.3 4.2-.8 1.3-.5 2.4-1.2 3.3-2.1.9-.9 1.6-1.9 2.1-3.2.5-1.2.8-2.5.8-3.9s-.3-2.7-.8-3.9c-.5-1.2-1.2-2.3-2.1-3.2-.9-.9-2-1.6-3.3-2.1-1.3-.5-2.6-.8-4.2-.8-1.5 0-2.9.3-4.1.8-1.3.5-2.4 1.2-3.3 2.1-.8 1-1.5 2-2 3.2zm4.1 6.4c-.3-.8-.5-1.6-.5-2.5s.2-1.7.5-2.5c.3-.7.7-1.4 1.3-1.9.5-.5 1.2-1 1.9-1.3.7-.3 1.5-.5 2.3-.5.8 0 1.6.2 2.3.5.7.3 1.3.7 1.9 1.3.5.5 1 1.2 1.3 1.9.3.7.5 1.6.5 2.4 0 .9-.2 1.7-.5 2.5s-.7 1.4-1.3 1.9c-.5.5-1.2 1-1.9 1.3-.7.3-1.5.4-2.3.4-.8 0-1.6-.2-2.3-.5-.7-.3-1.3-.7-1.9-1.3-.5-.3-1-1-1.3-1.7zm29.7-8L2.6-39c-1.2 0-2.2.2-3.1.6-1 .4-1.8 1-2.4 1.6l-.4-2.2h-3.6v18.7h4.4v-9c0-1 .1-1.8.4-2.6.3-.7.6-1.3 1.1-1.8.5-.5 1.1-.9 1.8-1.1.7-.3 1.5-.4 2.3-.4l.9.1zM35.3-39h-4.8l-4.3 12.9h-.1L22-38.8h-3.3l-4.1 12.7h-.1L10.2-39H5.4l6.7 18.7h4l4.2-12 4.3 12h4L35.3-39zm4.3 9.4c0 .9.2 1.7.5 2.5s.7 1.4 1.3 1.9c.5.5 1.2 1 1.9 1.3.7.3 1.5.4 2.4.4.8 0 1.6-.1 2.3-.4.7-.3 1.4-.7 1.9-1.3.5-.5 1-1.2 1.3-1.9.3-.8.5-1.6.5-2.5 0-.9-.2-1.7-.5-2.4-.3-.8-.7-1.4-1.3-1.9-.5-.5-1.2-1-1.9-1.3-.7-.3-1.5-.5-2.3-.5s-1.6.2-2.4.5c-.7.3-1.4.7-1.9 1.3-.5.5-1 1.2-1.3 1.9-.3.7-.5 1.5-.5 2.4zm-4.4 0c0-1.4.2-2.7.7-3.9.5-1.2 1.2-2.3 2-3.2.9-.9 1.9-1.6 3.2-2.1 1.2-.5 2.6-.8 4.1-.8.7 0 1.4.1 2 .2.6.1 1.2.3 1.8.6.6.2 1.1.5 1.5.8.5.3.9.6 1.3 1l.3-2.1h3.8v18.7h-3.8l-.3-2.1c-.4.4-.8.7-1.3 1-.5.3-1 .6-1.5.8-.5.2-1.1.4-1.8.5-.6.1-1.3.2-2 .2-1.5 0-2.9-.3-4.1-.8-1.2-.5-2.3-1.2-3.2-2.1-.9-.9-1.6-1.9-2-3.2-.4-.8-.7-2.1-.7-3.5zM77.7-39H73l-5.3 12.8-.2-.9-5-11.9h-4.9l7.7 18-3.3 7.2h4.8L77.7-39z" transform="translate(78 45)" style="fill-rule: evenodd; clip-rule: evenodd;"></path>
                                                       </svg>
                                                     </div>
@@ -193,7 +195,7 @@
                             </div>
                         </div>
                 </div>
-        <form method="POST" id="first_page_data" enctype="multipart/form-data">
+        <form method="POST" id="first_page_data" enctype="multipart/form-data" class="block">
             <div class="w-full md:w-[285px]" id="first_page">
                <div class="flex flex-col gap-[25px]">
                   <div class="text-navyBlue leading-regular flex cursor-default items-center gap-[5px] text-[15px] md:text-[13px] ">
@@ -311,7 +313,7 @@
                      </div>
                   </div>
                 </div>
-                <div id="submitbtn_deactivate" class="block bg-[#BEBEBE] mt-6 w-full text-white cursor-pointer text-[15px] font-[500] heading-[14px] rounded-[5px] py-[12px] md:py-[14px] text-center">
+                <div id="submitbtn_deactivate" class="block bg-[#BEBEBE] mt-6 w-full text-white cursor-default text-[15px] font-[500] heading-[14px] rounded-[5px] py-[12px] md:py-[14px] text-center">
                   Add contact details
                 </div>
                 <div id="submitbtn_active" class="hidden bg-[#1ED761] mt-6 w-full text-white cursor-pointer text-[15px] font-[500] heading-[14px] rounded-[5px] py-[12px] md:py-[14px] text-center">
@@ -368,10 +370,12 @@
                             <input type="text" name="reference" class="reference w-full h-full focus:outline-none focus:ring-transparent bg-transparent outline-none border-none p-0 text-[16px] placeholder-gray-300 md:text-[14px] heading-[20px] text-black" placeholder="" value="" id="reference">
                         </div>
                     </div>
-                    <button type="submit" name="save_first_page" class="bg-[#BEBEBE] text-white cursor-default text-[15px] font-[500] heading-[14px] rounded-[5px] py-[12px] md:py-[14px] text-center" id="save_first_page" onclick="show_last_stage()" disabled="">
+                    <button type="submit" name="save_first_page" class="block bg-[#BEBEBE] text-white cursor-default text-[15px] font-[500] heading-[14px] rounded-[5px] py-[12px] md:py-[14px] text-center" id="formbtn_deactivate"  disabled="">
                         Create
                     </button>
-                     <div class="m-auto max-w-[230px] text-[#BEBEBE] text-[9px] text-center mt-[30px]">
+                    <input type="submit" name="save_card" id="save_card" class="hidden cursor-pointer bg-[#1ED761] text-white  text-[15px] font-[500] heading-[14px] rounded-[5px] py-[12px] md:py-[14px] text-center" value="Create">
+
+                    <div class="m-auto max-w-[230px] text-[#BEBEBE] text-[9px] text-center mt-[30px]">
                         <strong>You are not creating a Doorway account.</strong><br><br>By creating a card, you accept our&nbsp;
                         <a href="https://www.doorway.io/subscription-agreement" target="_blank" rel="noreferrer" class="text-electricGreen hover:underline">Terms of Service</a>&nbsp;&amp;&nbsp;
                         <a href="https://www.doorway.io/subscription-agreement" target="_blank" rel="noreferrer" class="text-electricGreen hover:underline">Privacy Policy</a>.
@@ -379,11 +383,31 @@
                 </div>
             </div>
         </form>
+        <div id="third_page" class="hidden">
+            <div class="hidden md:block text-[25px] md:text-[50px] heading-[58px] font-[700] mb-[12px] md:mb-[17px] text-center max-w-[682px] px-[30px]">Save to Wallet</div>
+            <div class="hidden md:block text-[16px] heading-[25px] mb-[38px] md:mb-[40px] font-[400] text-center max-w-[287px] md:max-w-full"></div>
+            <div class="block md:hidden text-[25px] md:text-[50px] heading-[58px] font-[700] mb-[12px] md:mb-[17px] text-center max-w-[682px] px-[30px]">Save to Wallet</div>
+            <div class="block md:hidden text-[16px] heading-[25px] mb-[38px] md:mb-[40px] font-[400] text-center max-w-[287px] md:max-w-full"></div>
+            <div class="mb-[80px] md:mb-[250px] w-full">
+               <div class="flex flex-col md:flex-row gap-[44px] md:gap-[75px] items-center md:items-start justify-center">
+                  <div class="flex flex-col items-center">
+                     <div class="flex-col items-center hidden sm:flex">
+                        <div class="text-[16px] mt-[-40px] mb-[50px]">Scan QR code</div>
+                        <div class="shadow-md rounded-lg p-[35px]">
+                            <img src="image/Example-QR-code.webp" alt="" id="" class="w-[200px]">
+                        </div>
+                       <a href="image/Example-QR-code.webp" download="QR_Code.webp" class="text-electricGreen text-[15px] mt-[50px]">Save via PC</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+        </div>
 </div>
 </div>
 </div>
 </div>
 </div>
+
     <!-- model popup -->
     <div id="authentication-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class=" p-4 w-full max-w-md max-h-full">
