@@ -294,7 +294,8 @@ $(document).ready(function () {
         event.preventDefault();
         var formData = new FormData(this);
         formData.append('action', 'add_data');
-
+    
+        // First AJAX request to handle form submission
         $.ajax({
             url: "add_data.php",
             type: "POST",
@@ -312,6 +313,27 @@ $(document).ready(function () {
                 $('#third_step_bg').addClass('bg-electricGreen');
                 $('#third_step_text').addClass('text-electricGreen');
             }   
+        });
+    
+        $.ajax({
+            url: "qrcode.php",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            dataType: "json",
+            success: function (response) {
+                    if (response.status === 'success') {
+                        $('#qrcode').attr('src', response.qrCodeData);
+                        $('#downloadLink').attr('href', response.qrCodeData);
+                        $('#downloadLink').attr('download', 'QR_Code.svg');
+                    } else {
+                        console.error('Error: ' + response.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error('AJAX Error: ' + error);
+                }
         });
     });
 }); 

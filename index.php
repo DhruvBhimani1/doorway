@@ -83,7 +83,7 @@
                 <div>
                     <div class="flex flex-col md:flex-row gap-[44px] md:gap-[75px] items-center md:items-start justify-center">
                         <div class="w-[330px]" id="card">
-                            <div class="flex md:hidden justify-center">
+                            <div class="flex hidden justify-center">
                                 <div class="border border-black py-[8px] px-[20px] rounded-[4px] flex items-center gap-[7px] cursor-pointer text-[15px]">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor">
                                      <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"></path>
@@ -92,7 +92,7 @@
                                  View card
                              </div>
                          </div>
-                         <div id="responsive-card" class="hidden md:block">
+                         <div id="responsive-card" class="block">
                             <div class="relative w-[330px]">
                                 <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="visible w-[330px] shadow-lg text-white rounded-2xl" style="background-color: rgb(30, 215, 97);">
                                     <div class="flex flex-col h-full justify-between pb-6">
@@ -394,9 +394,9 @@
                      <div class="flex-col items-center hidden sm:flex">
                         <div class="text-[16px] mt-[-40px] mb-[50px]">Scan QR code</div>
                         <div class="shadow-md rounded-lg p-[35px]">
-                            <img src="image/Example-QR-code.webp" alt="" id="" class="w-[200px]">
+                            <img  src="" alt="" id="qrcode" class="w-[200px]">
                         </div>
-                       <a href="image/Example-QR-code.webp" download="QR_Code.webp" class="text-electricGreen text-[15px] mt-[50px]">Save via PC</a>
+                       <a id="downloadLink"  class="text-electricGreen text-[15px] mt-[50px]">Save via PC</a>
                      </div>
                   </div>
                </div>
